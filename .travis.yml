@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: UlY2qwhEdBIFJMX2v5NvC6Fxgpfa4OI5K+CVT3xV7akKKOEDl96qltR6JajvY+s/OcuRfyUqzlvvJTNu1qTkL09Htu4HXsAXu/1wOFlJ1lQJCivdf1mq0CKV/MWjk4bp+Mv499gbo3EY9XLRIZI3Putp3wMDGeAwqhnoQP5t5JByPEh5V5mhfAqK1cVmRXBVKhbGaNStnK2z45+aicR7704UURP1AHrQocdi2NASdr+2BtvHnk9z3ejqxMNmjtxTjt+OmARAQ9IXwIaxdJ/sK0Z4RCdhm8ho+eFCG9mVYY5E5Eia1GwsPxUlS8Wnhh1rf2qctUhBZqI+Qzad6jXmUAt+QDBCeHGCTe+zB3jZ/p7cAlFYysUJDOcfEcKNmKSbnB+hb3YuKpX4eVRsy3v04Ti5M+nKOPdFHGNNsoutGJ9W44N+kAcbH5wBEJ7AHQ/ihNcusgOTUy9VO+oCFVT6XwosiiCnoP2ibmIaRQsfwyqcuSwo34ZFT8bOGHIypxf1ReekwtuFGQa0ozqRb5rTrV6tftFOy52EzpppmhAApekJV1tT4G0rtGFWnlocBJnCJtba/pwWfNRZbUGaBF8KadRK6APJNW0Wm7Hnvwi/XdLRqHh9dYZc1UDdbf8L6Oi/PPksrFsDdILxDljPVE8LOOiU0qj7iPw5EE2ft7Mqa7Q=
+  app: obscure-peak-60510
+  on:
+    repo: SKMCanedy/react-trello-testing
